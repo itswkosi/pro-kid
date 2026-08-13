@@ -1,0 +1,301 @@
+{
+  "id": "pro-kid-fr-5-7",
+  "locale": "fr",
+  "ageGroup": "5-7",
+  "questions": [
+    {
+      "id": "feeling-sad",
+      "text": "Se sentir triste",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "feeling-scared-or-worried",
+      "text": "Se sentir inquiet ou effrayé",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "feeling-left-out",
+      "text": "Se sentir exclu",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "feeling-tired",
+      "text": "Se sentir fatigué",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "throwing-up",
+      "text": "Avoir envie de vomir ou vomir",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "do-not-feel-like-eating",
+      "text": "Ne pas avoir envie de manger",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "cannot-sleep-well",
+      "text": "Ne pas bien dormir",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "problems-with-thinking",
+      "text": "Avoir des difficultés à penser ou à se concentrer",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "constipation",
+      "text": "Constipation",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "itching",
+      "text": "Démangeaisons",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "headache",
+      "text": "Mal de tête",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "pain",
+      "text": "Douleur",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "trouble-breathing",
+      "text": "Difficulté à respirer",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    },
+    {
+      "id": "changes-in-taste-of-food",
+      "text": "Changements dans le goût des aliments",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas du tout", "icon": "😊" },
+          { "value": 1, "label": "Parfois", "icon": "🙂" },
+          { "value": 2, "label": "Beaucoup", "icon": "😐" }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          { "value": 0, "label": "Pas dérangeant", "icon": "😊" },
+          { "value": 1, "label": "Un peu dérangeant", "icon": "🙂" },
+          { "value": 2, "label": "Très dérangeant", "icon": "😐" }
+        ]
+      }
+    }
+  ]
+}

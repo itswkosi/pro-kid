@@ -1,0 +1,357 @@
+{
+  "id": "pro-kid-fr-8-18",
+  "locale": "fr",
+  "ageGroup": "8-18",
+  "questions": [
+    {
+      "id": "feeling-sad",
+      "text": "Se sentir triste",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "feeling-scared-or-worried",
+      "text": "Se sentir inquiet ou effrayé",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "feeling-left-out",
+      "text": "Se sentir exclu",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "feeling-tired",
+      "text": "Se sentir fatigué",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "throwing-up",
+      "text": "Avoir envie de vomir ou vomir",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "do-not-feel-like-eating",
+      "text": "Ne pas avoir envie de manger",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "cannot-sleep-well",
+      "text": "Ne pas bien dormir",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "problems-with-thinking",
+      "text": "Avoir des difficultés à penser ou à se concentrer",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "constipation",
+      "text": "Constipation",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "itching",
+      "text": "Démangeaisons",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "headache",
+      "text": "Mal de tête",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "pain",
+      "text": "Douleur",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "trouble-breathing",
+      "text": "Difficulté à respirer",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    },
+    {
+      "id": "changes-in-taste-of-food",
+      "text": "Changements dans le goût des aliments",
+      "responseLabels": { "frequency": "Fréquence", "impact": "Impact" },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Toujours" }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          { "value": 0, "label": "Pas du tout" },
+          { "value": 1, "label": "Un peu" },
+          { "value": 2, "label": "Moyennement" },
+          { "value": 3, "label": "Beaucoup" },
+          { "value": 4, "label": "Extrêmement dérangeant" }
+        ]
+      }
+    }
+  ]
+}

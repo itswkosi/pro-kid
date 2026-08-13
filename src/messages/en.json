@@ -1,0 +1,197 @@
+{
+  "common": {
+    "skipToMain": "Skip to main content",
+    "nav": {
+      "homeAriaLabel": "PRO-KID home",
+      "toggle": "Toggle navigation menu",
+      "languageLabel": "Current language",
+      "items": {
+        "about": "About PRO-KID",
+        "resources": "Resources",
+        "publications": "Publications",
+        "tool": "PRO-KID Tool",
+        "contact": "Contact"
+      },
+      "tagline": "Patient Reported Outcomes in Kidney Disease"
+    },
+    "footer": {
+      "title": "Footer",
+      "description": "PRO-KID is a research initiative from the University of Manitoba in collaboration with Can-SOLVE CKD.",
+      "learnMore": "Learn more about PRO-KID",
+      "partner": "Partner",
+      "partnerName": "University of Manitoba",
+      "network": "Network",
+      "networkName": "Can-SOLVE",
+      "networkSubName": "CKD Network",
+      "legal": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Use",
+        "accessibility": "Accessibility"
+      },
+      "copyright": "© 2026 University of Manitoba. All rights reserved.",
+      "social": {
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram"
+      },
+      "taglineLine1": "Patient Reported Outcomes",
+      "taglineLine2": "in Kidney Disease"
+    }
+  },
+  "tool": {
+    "hero": {
+      "title": "PRO-KID Tool",
+      "description": "Help children and teens share how they feel so their care team can better understand what matters most."
+    },
+    "language": {
+      "english": "English",
+      "french": "Français"
+    },
+    "onboarding": {
+      "eyebrow": "Onboarding",
+      "stepLabel": "Step {step} of 3",
+      "continue": "Continue",
+      "back": "Back",
+      "begin": "Begin Questionnaire",
+      "changeSelections": "Change selections",
+      "selectedFile": "Selected questionnaire file",
+      "summary": {
+        "language": "Language",
+        "ageGroup": "Age group",
+        "file": "Questionnaire file"
+      },
+      "steps": {
+        "language": {
+          "title": "Choose your language",
+          "description": "Switching language updates the full PRO-KID tool instantly without reloading the page."
+        },
+        "age": {
+          "title": "Choose the age group",
+          "description": "Your selection determines which questionnaire JSON file will load later."
+        },
+        "instructions": {
+          "title": "Before you begin",
+          "description": "Review these instructions before opening the questionnaire.",
+          "items": {
+            "pastWeek": "Complete based on the past 7 days",
+            "noWrongAnswers": "There are no right or wrong answers",
+            "notSaved": "Your responses are not saved",
+            "report": "You can download or print a report afterwards"
+          }
+        }
+      },
+      "ageGroups": {
+        "completedBy": "Completed by",
+        "loads": "Loads",
+        "age2To4": {
+          "age": "2-4 years",
+          "respondent": "Parent or caregiver",
+          "description": "A proxy-report version for very young children based on caregiver observations."
+        },
+        "age5To7": {
+          "age": "5-7 years",
+          "respondent": "Child with caregiver support",
+          "description": "A shared-report version that supports early school-age children with guided help."
+        },
+        "age8To18": {
+          "age": "8-18 years",
+          "respondent": "Child or teen",
+          "description": "A self-report version for older children and adolescents to describe symptoms directly."
+        }
+      }
+    },
+    "questionnaire": {
+      "title": "In the past week, how often did you have this symptom?",
+      "subtitle": "And how much did it bother you?",
+      "symptomsLabel": "Symptoms",
+      "frequencyTitle": "Frequency",
+      "impactTitle": "Impact",
+      "notice": "Please answer every question. There are no right or wrong answers.",
+      "progress": {
+        "title": "Completed",
+        "count": "{completed} / {total} symptoms"
+      },
+      "validation": {
+        "complete": "Complete",
+        "incomplete": "Needs both responses",
+        "completeDescription": "This symptom has both frequency and impact responses.",
+        "incompleteDescription": "Select a frequency and an impact response to complete this symptom.",
+        "needsAttention": "This symptom still needs responses before your review is complete."
+      }
+    },
+    "review": {
+      "title": "Review Answers",
+      "description": "Check completion before generating a report. You can jump directly to any unanswered symptom.",
+      "completionLabel": "Completion",
+      "completionSuffix": "completed",
+      "allComplete": "All symptoms are complete and ready for report generation.",
+      "incompleteTitle": "Some symptoms still need responses",
+      "incompleteDescription": "Use the buttons below to jump to unanswered questions and finish your review.",
+      "validationNotice": "Please complete the highlighted symptoms or review the missing responses before generating the report.",
+      "unansweredListLabel": "Unanswered symptoms",
+      "jumpToQuestionAria": "Jump to unanswered symptom: {question}"
+    },
+    "sidebar": {
+      "about": {
+        "title": "About This Tool",
+        "description": "PRO-KID is a validated questionnaire that asks about symptoms and how much they bother you in the past 7 days.",
+        "link": "Learn more about PRO-KID"
+      },
+      "howToUse": {
+        "title": "How to Use This Tool",
+        "items": {
+          "one": "Think about the past 7 days.",
+          "two": "For each feeling, choose how often you had it.",
+          "three": "Then choose how much it bothered you.",
+          "four": "There are no right or wrong answers."
+        }
+      },
+      "scoring": {
+        "title": "Scoring Explained",
+        "description": "Your answers are turned into scores from 0 to 100. We calculate two scores: how often you had symptoms and how much they bothered you.",
+        "link": "Learn more about scoring"
+      },
+      "privacy": {
+        "title": "Your Privacy Matters",
+        "description": "Your answers are not saved or stored on our servers. You can download or print your results to share with your care team."
+      }
+    },
+    "results": {
+      "title": "Your Results",
+      "description": "Generate a report to calculate frequency and impact scores from your completed responses.",
+      "emptyState": "Generate a report to calculate frequency and impact scores.",
+      "disclaimer": "This report summarizes your questionnaire responses and is intended to support conversations with your healthcare team. It does not provide medical advice or a diagnosis.",
+      "validation": {
+        "moreNeeded": "More responses are needed before a score can be calculated."
+      },
+      "frequencyScore": {
+        "title": "Frequency Score",
+        "answered": "Calculated from {answered} of {total} frequency responses."
+      },
+      "impactScore": {
+        "title": "Impact Score",
+        "answered": "Calculated from {answered} of {total} impact responses."
+      },
+      "symptomSummary": {
+        "title": "Symptom Summary",
+        "description": "Symptoms are sorted by highest reported burden to help clinicians quickly identify the most important symptoms.",
+        "frequency": "Frequency",
+        "impact": "Impact",
+        "empty": "Complete responses to view the highest-burden symptom summary."
+      },
+      "actions": {
+        "generate": "Generate Report",
+        "generating": "Generating Report...",
+        "print": "Print Report",
+        "printing": "Preparing Print...",
+        "download": "Download PDF",
+        "downloading": "Preparing PDF...",
+        "startNew": "Start New Assessment",
+        "generateAria": "Generate questionnaire report",
+        "printAria": "Print the generated report",
+        "downloadAria": "Download the generated PDF report",
+        "startNewAria": "Start a new assessment and clear current answers"
+      }
+    }
+  }
+}

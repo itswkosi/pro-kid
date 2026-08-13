@@ -1,0 +1,819 @@
+{
+  "id": "pro-kid-en-5-7",
+  "locale": "en",
+  "ageGroup": "5-7",
+  "questions": [
+    {
+      "id": "feeling-sad",
+      "text": "Feeling sad",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "feeling-scared-or-worried",
+      "text": "Feeling scared or worried",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "feeling-left-out",
+      "text": "Feeling left out",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "feeling-tired",
+      "text": "Feeling tired",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "throwing-up",
+      "text": "Feeling like you may throw up or throwing up",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "do-not-feel-like-eating",
+      "text": "Do not feel like eating",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cannot-sleep-well",
+      "text": "Cannot sleep well",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "problems-with-thinking",
+      "text": "Problems with thinking or concentrating",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "constipation",
+      "text": "Constipation",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "itching",
+      "text": "Itching",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "headache",
+      "text": "Headache",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pain",
+      "text": "Pain",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "trouble-breathing",
+      "text": "Trouble breathing",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "changes-in-taste-of-food",
+      "text": "Changes in taste of food",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Always"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "likert-5",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all"
+          },
+          {
+            "value": 1,
+            "label": "A little"
+          },
+          {
+            "value": 2,
+            "label": "Medium"
+          },
+          {
+            "value": 3,
+            "label": "A lot"
+          },
+          {
+            "value": 4,
+            "label": "Extremely bothered"
+          }
+        ]
+      }
+    }
+  ]
+}

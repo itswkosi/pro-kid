@@ -1,0 +1,197 @@
+{
+  "common": {
+    "skipToMain": "Aller au contenu principal",
+    "nav": {
+      "homeAriaLabel": "Accueil PRO-KID",
+      "toggle": "Ouvrir le menu de navigation",
+      "languageLabel": "Langue actuelle",
+      "items": {
+        "about": "À propos de PRO-KID",
+        "resources": "Ressources",
+        "publications": "Publications",
+        "tool": "Outil PRO-KID",
+        "contact": "Contact"
+      },
+      "tagline": "Résultats rapportés par les patients en maladie rénale"
+    },
+    "footer": {
+      "title": "Pied de page",
+      "description": "PRO-KID est une initiative de recherche de l'Université du Manitoba en collaboration avec Can-SOLVE CKD.",
+      "learnMore": "En savoir plus sur PRO-KID",
+      "partner": "Partenaire",
+      "partnerName": "Université du Manitoba",
+      "network": "Réseau",
+      "networkName": "Can-SOLVE",
+      "networkSubName": "Réseau CKD",
+      "legal": {
+        "privacy": "Politique de confidentialité",
+        "terms": "Conditions d'utilisation",
+        "accessibility": "Accessibilité"
+      },
+      "copyright": "© 2026 Université du Manitoba. Tous droits réservés.",
+      "social": {
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram"
+      },
+      "taglineLine1": "Résultats rapportés",
+      "taglineLine2": "en maladie rénale"
+    }
+  },
+  "tool": {
+    "hero": {
+      "title": "Outil PRO-KID",
+      "description": "Aidez les enfants et les adolescents à exprimer comment ils se sentent afin que leur équipe soignante comprenne mieux ce qui compte le plus."
+    },
+    "language": {
+      "english": "English",
+      "french": "Français"
+    },
+    "onboarding": {
+      "eyebrow": "Accueil",
+      "stepLabel": "Étape {step} sur 3",
+      "continue": "Continuer",
+      "back": "Retour",
+      "begin": "Commencer le questionnaire",
+      "changeSelections": "Modifier les sélections",
+      "selectedFile": "Fichier de questionnaire sélectionné",
+      "summary": {
+        "language": "Langue",
+        "ageGroup": "Groupe d'âge",
+        "file": "Fichier du questionnaire"
+      },
+      "steps": {
+        "language": {
+          "title": "Choisissez votre langue",
+          "description": "Changer la langue met à jour tout l'outil PRO-KID instantanément sans recharger la page."
+        },
+        "age": {
+          "title": "Choisissez le groupe d'âge",
+          "description": "Votre sélection détermine quel fichier JSON du questionnaire sera chargé plus tard."
+        },
+        "instructions": {
+          "title": "Avant de commencer",
+          "description": "Passez en revue ces consignes avant d'ouvrir le questionnaire.",
+          "items": {
+            "pastWeek": "Répondez en fonction des 7 derniers jours",
+            "noWrongAnswers": "Il n'y a pas de bonnes ou de mauvaises réponses",
+            "notSaved": "Vos réponses ne sont pas enregistrées",
+            "report": "Vous pourrez télécharger ou imprimer un rapport ensuite"
+          }
+        }
+      },
+      "ageGroups": {
+        "completedBy": "Rempli par",
+        "loads": "Charge",
+        "age2To4": {
+          "age": "2-4 ans",
+          "respondent": "Parent ou proche aidant",
+          "description": "Une version par procuration pour les très jeunes enfants basée sur les observations du proche aidant."
+        },
+        "age5To7": {
+          "age": "5-7 ans",
+          "respondent": "Enfant avec aide du proche aidant",
+          "description": "Une version partagée qui soutient les enfants d'âge scolaire avec un accompagnement guidé."
+        },
+        "age8To18": {
+          "age": "8-18 ans",
+          "respondent": "Enfant ou adolescent",
+          "description": "Une version autodéclarée pour permettre aux enfants plus âgés et aux adolescents de décrire directement leurs symptômes."
+        }
+      }
+    },
+    "questionnaire": {
+      "title": "Au cours de la dernière semaine, à quelle fréquence avez-vous eu ce symptôme?",
+      "subtitle": "Et à quel point cela vous a-t-il dérangé?",
+      "symptomsLabel": "Symptômes",
+      "frequencyTitle": "Fréquence",
+      "impactTitle": "Impact",
+      "notice": "Veuillez répondre à chaque question. Il n'y a pas de bonnes ou de mauvaises réponses.",
+      "progress": {
+        "title": "Complété",
+        "count": "{completed} / {total} symptômes"
+      },
+      "validation": {
+        "complete": "Complété",
+        "incomplete": "Les deux réponses sont requises",
+        "completeDescription": "Ce symptôme comprend une réponse de fréquence et une réponse d'impact.",
+        "incompleteDescription": "Sélectionnez une réponse de fréquence et une réponse d'impact pour compléter ce symptôme.",
+        "needsAttention": "Ce symptôme requiert encore des réponses avant que votre révision soit terminée."
+      }
+    },
+    "review": {
+      "title": "Réviser les réponses",
+      "description": "Vérifiez le niveau de complétion avant de générer un rapport. Vous pouvez accéder directement aux symptômes sans réponse.",
+      "completionLabel": "Progression",
+      "completionSuffix": "complétés",
+      "allComplete": "Tous les symptômes sont complétés et prêts pour la génération du rapport.",
+      "incompleteTitle": "Certains symptômes requièrent encore des réponses",
+      "incompleteDescription": "Utilisez les boutons ci-dessous pour accéder aux questions sans réponse et terminer votre révision.",
+      "validationNotice": "Veuillez compléter les symptômes mis en évidence ou revoir les réponses manquantes avant de générer le rapport.",
+      "unansweredListLabel": "Symptômes sans réponse",
+      "jumpToQuestionAria": "Aller au symptôme sans réponse : {question}"
+    },
+    "sidebar": {
+      "about": {
+        "title": "À propos de cet outil",
+        "description": "PRO-KID est un questionnaire validé qui porte sur les symptômes et sur la mesure dans laquelle ils vous ont dérangé au cours des 7 derniers jours.",
+        "link": "En savoir plus sur PRO-KID"
+      },
+      "howToUse": {
+        "title": "Comment utiliser cet outil",
+        "items": {
+          "one": "Pensez aux 7 derniers jours.",
+          "two": "Pour chaque sensation, choisissez à quelle fréquence vous l'avez ressentie.",
+          "three": "Choisissez ensuite à quel point cela vous a dérangé.",
+          "four": "Il n'y a pas de bonnes ou de mauvaises réponses."
+        }
+      },
+      "scoring": {
+        "title": "Explication des scores",
+        "description": "Vos réponses sont transformées en scores de 0 à 100. Nous calculons deux scores : la fréquence des symptômes et à quel point ils vous ont dérangé.",
+        "link": "En savoir plus sur les scores"
+      },
+      "privacy": {
+        "title": "Votre confidentialité compte",
+        "description": "Vos réponses ne sont pas enregistrées ni stockées sur nos serveurs. Vous pouvez télécharger ou imprimer vos résultats pour les partager avec votre équipe soignante."
+      }
+    },
+    "results": {
+      "title": "Vos résultats",
+      "description": "Générez un rapport pour calculer les scores de fréquence et d'impact à partir de vos réponses complétées.",
+      "emptyState": "Générez un rapport pour calculer les scores de fréquence et d'impact.",
+      "disclaimer": "Ce rapport résume vos réponses au questionnaire et vise à soutenir les conversations avec votre équipe soignante. Il ne fournit pas de conseil médical ni de diagnostic.",
+      "validation": {
+        "moreNeeded": "Plus de réponses sont nécessaires avant qu'un score puisse être calculé."
+      },
+      "frequencyScore": {
+        "title": "Score de fréquence",
+        "answered": "Calculé à partir de {answered} réponses de fréquence sur {total}."
+      },
+      "impactScore": {
+        "title": "Score d'impact",
+        "answered": "Calculé à partir de {answered} réponses d'impact sur {total}."
+      },
+      "symptomSummary": {
+        "title": "Résumé des symptômes",
+        "description": "Les symptômes sont classés selon la charge rapportée la plus élevée pour aider les cliniciens à repérer rapidement les symptômes les plus importants.",
+        "frequency": "Fréquence",
+        "impact": "Impact",
+        "empty": "Complétez des réponses pour afficher le résumé des symptômes les plus lourds."
+      },
+      "actions": {
+        "generate": "Générer le rapport",
+        "generating": "Génération du rapport...",
+        "print": "Imprimer le rapport",
+        "printing": "Préparation pour impression...",
+        "download": "Télécharger le PDF",
+        "downloading": "Préparation du PDF...",
+        "startNew": "Commencer une nouvelle évaluation",
+        "generateAria": "Générer le rapport du questionnaire",
+        "printAria": "Imprimer le rapport généré",
+        "downloadAria": "Télécharger le rapport PDF généré",
+        "startNewAria": "Commencer une nouvelle évaluation et effacer les réponses actuelles"
+      }
+    }
+  }
+}

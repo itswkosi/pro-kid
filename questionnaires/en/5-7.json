@@ -1,0 +1,679 @@
+{
+  "id": "pro-kid-en-5-7",
+  "locale": "en",
+  "ageGroup": "5-7",
+  "questions": [
+    {
+      "id": "feeling-sad",
+      "text": "Feeling sad",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "feeling-scared-or-worried",
+      "text": "Feeling scared or worried",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "feeling-left-out",
+      "text": "Feeling left out",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "feeling-tired",
+      "text": "Feeling tired",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "throwing-up",
+      "text": "Feeling like you may throw up or throwing up",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "do-not-feel-like-eating",
+      "text": "Do not feel like eating",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cannot-sleep-well",
+      "text": "Cannot sleep well",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "problems-with-thinking",
+      "text": "Problems with thinking or concentrating",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "constipation",
+      "text": "Constipation",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "itching",
+      "text": "Itching",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "headache",
+      "text": "Headache",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pain",
+      "text": "Pain",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "trouble-breathing",
+      "text": "Trouble breathing",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    },
+    {
+      "id": "changes-in-taste-of-food",
+      "text": "Changes in taste of food",
+      "responseLabels": {
+        "frequency": "Frequency",
+        "impact": "Impact"
+      },
+      "frequencyScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not at all",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "Sometimes",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "A lot",
+            "icon": "😐"
+          }
+        ]
+      },
+      "impactScale": {
+        "style": "smiley-3",
+        "options": [
+          {
+            "value": 0,
+            "label": "Not bothered",
+            "icon": "😊"
+          },
+          {
+            "value": 1,
+            "label": "A little bothered",
+            "icon": "🙂"
+          },
+          {
+            "value": 2,
+            "label": "Very bothered",
+            "icon": "😐"
+          }
+        ]
+      }
+    }
+  ]
+}
