@@ -1,10 +1,7 @@
 import {
-  Circle,
   Document,
   Image,
   Page,
-  Path,
-  Svg,
   Text,
   View,
   StyleSheet,
@@ -24,6 +21,7 @@ export type ProKidReportDocumentProps = {
   frequencyScore: number;
   impactScore: number;
   responses: ReportResponseRow[];
+  proKidLogoSrc: string;
   umLogoSrc: string;
 };
 
@@ -51,10 +49,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 10,
   },
-  facesBlock: {
-    position: "relative",
+  proKidLogo: {
     width: 42,
     height: 34,
+    objectFit: "contain",
   },
   brandTextBlock: {
     maxWidth: 230,
@@ -242,27 +240,6 @@ const styles = StyleSheet.create({
   },
 });
 
-function BrandFaces() {
-  return (
-    <View style={styles.facesBlock}>
-      <Svg width={42} height={34}>
-        <Circle cx={12} cy={12} r={9} stroke="#111111" strokeWidth={1.2} fill="#FFFFFF" />
-        <Circle cx={28} cy={12} r={9} stroke="#111111" strokeWidth={1.2} fill="#FFFFFF" />
-        <Circle cx={20} cy={24} r={9} stroke="#111111" strokeWidth={1.2} fill="#FFFFFF" />
-        <Circle cx={9} cy={10} r={0.8} fill="#111111" />
-        <Circle cx={15} cy={10} r={0.8} fill="#111111" />
-        <Path d="M8 14 C10 16, 14 16, 16 14" stroke="#111111" strokeWidth={1} fill="none" />
-        <Circle cx={25} cy={10} r={0.8} fill="#111111" />
-        <Circle cx={31} cy={10} r={0.8} fill="#111111" />
-        <Path d="M24 14 C26 16, 30 16, 32 14" stroke="#111111" strokeWidth={1} fill="none" />
-        <Circle cx={17} cy={22} r={0.8} fill="#111111" />
-        <Circle cx={23} cy={22} r={0.8} fill="#111111" />
-        <Path d="M16 27 C18 29, 22 29, 24 27" stroke="#111111" strokeWidth={1} fill="none" />
-      </Svg>
-    </View>
-  );
-}
-
 function ScoreRing({ score }: { score: number }) {
   return (
     <View style={styles.scoreRing}>
@@ -279,6 +256,7 @@ export function ProKidReportDocument({
   frequencyScore,
   impactScore,
   responses,
+  proKidLogoSrc,
   umLogoSrc,
 }: ProKidReportDocumentProps) {
   return (
@@ -286,7 +264,7 @@ export function ProKidReportDocument({
       <Page size="A4" style={styles.page}>
         <View style={styles.header}>
           <View style={styles.brandBlock}>
-            <BrandFaces />
+            <Image src={proKidLogoSrc} style={styles.proKidLogo} />
             <View style={styles.brandTextBlock}>
               <Text style={styles.brandName}>PRO-KID</Text>
               <Text style={styles.brandTagline}>Patient Reported Outcomes in Kidney Disease</Text>

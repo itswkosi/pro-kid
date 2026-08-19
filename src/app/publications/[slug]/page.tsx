@@ -34,6 +34,9 @@ export default async function PublicationDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  const hasPdf = publication.pdfUrl !== "#";
+  const hasCitation = publication.citationUrl !== "#";
+
   return (
     <div className="min-h-screen bg-[#FBFCFF] text-[#173B68]">
       <Navbar />
@@ -68,6 +71,33 @@ export default async function PublicationDetailPage({ params }: PageProps) {
             <p className="mt-3 rounded-2xl bg-[#F5F8FF] p-4 text-[15px] leading-7 text-[#355A85]">
               {publication.citation}
             </p>
+          </section>
+
+          <section className="mt-8 flex flex-wrap gap-3" aria-label="Publication links">
+            <a
+              href={publication.pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-disabled={!hasPdf}
+              tabIndex={hasPdf ? 0 : -1}
+              className={`inline-flex h-11 items-center justify-center rounded-2xl border border-[#CEDCF1] bg-white px-5 text-sm font-semibold text-[#3C5D89] ${
+                hasPdf ? "hover:bg-[#F4F8FF]" : "cursor-not-allowed opacity-50 pointer-events-none"
+              }`}
+            >
+              Full publication
+            </a>
+            <a
+              href={publication.citationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-disabled={!hasCitation}
+              tabIndex={hasCitation ? 0 : -1}
+              className={`inline-flex h-11 items-center justify-center rounded-2xl border border-[#CEDCF1] bg-white px-5 text-sm font-semibold text-[#3C5D89] ${
+                hasCitation ? "hover:bg-[#F4F8FF]" : "cursor-not-allowed opacity-50 pointer-events-none"
+              }`}
+            >
+              Citation source
+            </a>
           </section>
         </article>
       </main>

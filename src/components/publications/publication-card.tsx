@@ -62,6 +62,8 @@ type PublicationCardProps = {
 
 export function PublicationCard({ publication }: PublicationCardProps) {
   const Icon = iconMap[publication.icon] || FileText;
+  const hasPdf = publication.pdfUrl !== "#";
+  const hasCitation = publication.citationUrl !== "#";
 
   return (
     <article className="group grid gap-5 rounded-[22px] border border-[#E5ECF8] bg-white p-5 shadow-[0_18px_40px_-34px_rgba(26,72,128,0.65)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_24px_52px_-30px_rgba(26,72,128,0.5)] lg:grid-cols-[auto_minmax(0,1.2fr)_minmax(0,0.8fr)_auto] lg:items-start lg:gap-7 lg:p-6">
@@ -103,20 +105,32 @@ export function PublicationCard({ publication }: PublicationCardProps) {
       </div>
 
       <div className="flex shrink-0 gap-3 lg:flex-col">
-        <Link
+        <a
           href={publication.pdfUrl}
-          aria-label={`Download PDF for ${publication.title}`}
-          className="inline-flex h-11 items-center justify-center rounded-2xl border border-[#CEDCF1] bg-white px-4 text-sm font-semibold text-[#3C5D89]"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open full publication for ${publication.title}`}
+          aria-disabled={!hasPdf}
+          tabIndex={hasPdf ? 0 : -1}
+          className={`inline-flex h-11 items-center justify-center rounded-2xl border border-[#CEDCF1] bg-white px-4 text-sm font-semibold text-[#3C5D89] ${
+            hasPdf ? "hover:bg-[#F4F8FF]" : "cursor-not-allowed opacity-50 pointer-events-none"
+          }`}
         >
-          PDF
-        </Link>
-        <Link
+          Full publication
+        </a>
+        <a
           href={publication.citationUrl}
-          aria-label={`Get citation for ${publication.title}`}
-          className="inline-flex h-11 items-center justify-center rounded-2xl border border-[#CEDCF1] bg-white px-4 text-sm font-semibold text-[#3C5D89]"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open citation source for ${publication.title}`}
+          aria-disabled={!hasCitation}
+          tabIndex={hasCitation ? 0 : -1}
+          className={`inline-flex h-11 items-center justify-center rounded-2xl border border-[#CEDCF1] bg-white px-4 text-sm font-semibold text-[#3C5D89] ${
+            hasCitation ? "hover:bg-[#F4F8FF]" : "cursor-not-allowed opacity-50 pointer-events-none"
+          }`}
         >
-          Cite
-        </Link>
+          Citation source
+        </a>
       </div>
     </article>
   );

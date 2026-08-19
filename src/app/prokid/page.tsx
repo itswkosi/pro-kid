@@ -5,7 +5,7 @@ import { ProKidToolApp } from "@/components/tool/ProKidToolApp";
 export const metadata: Metadata = {
   title: "PRO-KID Tool | PRO-KID",
   description:
-    "A pediatric patient-reported outcome tool for children and teens with kidney disease.",
+    "A pediatric patient-reported outcome tool for children and youth with kidney disease.",
 };
 
 export default function ProKidToolPage() {

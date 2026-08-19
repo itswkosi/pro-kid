@@ -238,6 +238,7 @@ export function QuestionnaireRenderer({
         frequencyScore={reportResult.frequency.score}
         impactScore={reportResult.impact.score}
         responses={responseRows}
+        proKidLogoSrc={`${window.location.origin}/images/PRO-Kid Logo.png`}
         umLogoSrc={`${window.location.origin}/images/um-logo.png`}
       />
     );
@@ -260,8 +261,8 @@ export function QuestionnaireRenderer({
 
   const onboardingInstructions = [
     t("onboarding.steps.instructions.items.pastWeek"),
-    t("onboarding.steps.instructions.items.noWrongAnswers"),
-    t("onboarding.steps.instructions.items.notSaved"),
+    t("onboarding.steps.instructions.items.frequency"),
+    t("onboarding.steps.instructions.items.impact"),
     t("onboarding.steps.instructions.items.report"),
   ];
 
@@ -362,15 +363,7 @@ export function QuestionnaireRenderer({
 
                     {step === 3 ? (
                       <div>
-                        <div className="flex items-center gap-2 text-[#4F5FA0]">
-                          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#EEF3FF] text-[#5A76C9]">
-                            <ClipboardList className="h-4 w-4" aria-hidden="true" />
-                          </span>
-                          <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#5D79A0]">
-                            {t("onboarding.eyebrow")}
-                          </p>
-                        </div>
-                        <ul className="mt-6 space-y-4">
+                        <ul className="space-y-4">
                           {onboardingInstructions.map((item, index) => (
                             <li key={item} className="flex items-start gap-3 text-base leading-7 text-[#496686]">
                               <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#F2EEFF] text-sm font-semibold text-[#6D54C4]">

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "PRO-KID",
   description:
-    "Patient Reported Outcomes in Kidney Disease for children and teens.",
+    "Patient Reported Outcomes in Kidney Disease for children and youth.",
 };
 
 export default function RootLayout({

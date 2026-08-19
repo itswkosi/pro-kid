@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, Globe, Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -17,26 +18,14 @@ const navItems = [
 
 function LogoMark() {
   return (
-    <span className="inline-flex items-center gap-1" aria-hidden="true">
-      <svg width="30" height="30" viewBox="0 0 22 22" fill="none">
-        <circle cx="11" cy="11" r="10" stroke="#AFC4E9" strokeWidth="1.5" fill="#F7FAFF" />
-        <circle cx="7.5" cy="9" r="1.2" fill="#2B5482" />
-        <circle cx="14.5" cy="9" r="1.2" fill="#2B5482" />
-        <path d="M7.5 13.5 Q11 16.5 14.5 13.5" stroke="#2B5482" strokeWidth="1.4" fill="none" strokeLinecap="round" />
-      </svg>
-      <svg width="30" height="30" viewBox="0 0 22 22" fill="none" className="-ml-2 mt-1">
-        <circle cx="11" cy="11" r="10" stroke="#AFC4E9" strokeWidth="1.5" fill="#F7FAFF" />
-        <circle cx="7.5" cy="9" r="1.2" fill="#2B5482" />
-        <circle cx="14.5" cy="9" r="1.2" fill="#2B5482" />
-        <path d="M7.5 13.5 Q11 16.5 14.5 13.5" stroke="#2B5482" strokeWidth="1.4" fill="none" strokeLinecap="round" />
-      </svg>
-      <svg width="30" height="30" viewBox="0 0 22 22" fill="none" className="-ml-2 mt-4">
-        <circle cx="11" cy="11" r="10" stroke="#AFC4E9" strokeWidth="1.5" fill="#F7FAFF" />
-        <circle cx="7.5" cy="9" r="1.2" fill="#2B5482" />
-        <circle cx="14.5" cy="9" r="1.2" fill="#2B5482" />
-        <path d="M7.5 13.5 Q11 16.5 14.5 13.5" stroke="#2B5482" strokeWidth="1.4" fill="none" strokeLinecap="round" />
-      </svg>
-    </span>
+    <Image
+      src="/images/PRO-Kid Logo.png"
+      alt=""
+      aria-hidden="true"
+      width={64}
+      height={64}
+      className="h-14 w-14 shrink-0 object-contain sm:h-16 sm:w-16"
+    />
   );
 }
 
@@ -45,7 +34,7 @@ export function PublicationsNavbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#DEE8F5]/90 bg-white/95 backdrop-blur-xl">
-      <div className="mx-auto flex h-[88px] w-full max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto flex h-[118px] w-full max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:px-10">
         <Link href="/" className="flex items-center gap-2" aria-label="PRO-KID homepage">
           <LogoMark />
           <span>
@@ -54,8 +43,11 @@ export function PublicationsNavbar() {
               <span className="text-[#92C54A]">-</span>
               <span className="text-[#5D9CE3]">KID</span>
             </span>
-            <span className="-mt-0.5 block text-[10px] font-medium text-[#6682A6]">
-              Patient Reported Outcomes in Kidney Disease
+            <span className="-mt-0.5 block text-[16.5px] font-medium leading-[1.3] text-[#6682A6]">
+              <span className="font-extrabold text-[#F29D39]">P</span>atient {" "}
+              <span className="font-extrabold text-[#92C54A]">R</span>eported {" "}
+              <span className="font-extrabold text-[#5D9CE3]">O</span>utcomes in {" "}
+              <span className="font-extrabold text-[#7C6AE9]">Kid</span>ney Disease
             </span>
           </span>
         </Link>
@@ -65,7 +57,7 @@ export function PublicationsNavbar() {
             <Link
               key={item.label}
               href={item.href}
-              className={`inline-flex items-center gap-1 pb-1 text-sm font-semibold transition-colors ${
+              className={`inline-flex items-center gap-1 pb-1 text-[18.5px] font-semibold transition-colors ${
                 item.active
                   ? "border-b-2 border-[#7F64DA] text-[#233D70]"
                   : "text-[#365886] hover:text-[#1F4A82]"
@@ -80,7 +72,7 @@ export function PublicationsNavbar() {
         <div className="hidden xl:block">
           <Button
             variant="outline"
-            className="h-11 rounded-2xl border-[#C9D8EF] px-4 text-sm font-semibold text-[#2A4F83]"
+            className="h-11 rounded-2xl border-[#C9D8EF] px-4 text-[18.5px] font-semibold text-[#2A4F83]"
           >
             <Globe className="mr-2 h-4 w-4" aria-hidden="true" />
             English

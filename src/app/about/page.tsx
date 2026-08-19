@@ -16,12 +16,14 @@ const team = [
     role: "Principal Investigator",
     org: "Professor of Pediatrics\nUniversity of Manitoba",
     image: "/images/Allison-Headshot.png",
+    profileUrl: "https://www.chrim.ca/investigator/allison-dart/",
   },
   {
     name: "Dr Mina Matsuda-Abedini",
     role: "Co-Investigator",
     org: "Professor of Pediatrics\nUniversity of Manitoba",
-    image: "/images/Allison-Headshot.png",
+    image: "/images/Mina-Headshot.jpeg",
+    profileUrl: "https://www.bcchr.ca/research/find-a-researcher/mina-matsuda-abedini/",
   },
   {
     name: "Karma Abukasm",
@@ -30,7 +32,7 @@ const team = [
     image: "/images/Karma-Headshot.JPG",
   },
   {
-    name: "Banke Oketola",
+    name: "Dr Banke Oketola",
     role: "Research Manager",
     org: "Associate Professor of Pediatrics\nUniversity of Manitoba",
     image: "/images/Banke-Headshot.png",
@@ -97,8 +99,8 @@ export default function AboutPage() {
             <div className="mt-8 max-w-xl pb-6 lg:pt-6">
               <h1 className="text-5xl font-bold tracking-[-0.03em] text-[#163C72] sm:text-6xl">About PRO-KID</h1>
               <p className="mt-6 text-xl font-semibold leading-9 text-[#244C7C]">
-                PRO-KID is a validated questionnaire that gives children and teens with
-                kidney disease a voice about their symptoms and how they feel.
+                PRO-KID is a validated questionnaire that helps children and youth with CKD
+                communicate their symptoms and how they feel while living with CKD.
               </p>
               <p className="mt-5 max-w-lg text-lg leading-8 text-[#3B5E88]">
                 It helps healthcare teams understand what matters most so they can provide
@@ -122,7 +124,7 @@ export default function AboutPage() {
                   <div>
                     <h3 className="text-3xl font-bold tracking-[-0.02em] text-[#6A47B1]">Our Mission</h3>
                     <p className="mt-4 max-w-xl text-lg leading-8 text-[#36547B]">
-                      To improve the lives of children and teens with chronic kidney disease
+                      To improve the lives of children and youth with chronic kidney disease
                       through better communication, strong patient partnerships, and
                       meaningful research.
                     </p>
@@ -157,7 +159,7 @@ export default function AboutPage() {
               <span className="mt-4 block h-1.5 w-20 rounded-full bg-[#EDC43F]" aria-hidden="true" />
               <p className="mt-6 text-lg leading-8 text-[#35557E]">
                 PRO-KID was developed through a patient-partnered approach. Children,
-                teens, parents, caregivers, and healthcare professionals worked together at
+                youth, parents, caregivers, and healthcare professionals worked together at
                 every step to make sure the questionnaire reflects the real experiences of
                 young people living with kidney disease.
               </p>
@@ -189,8 +191,8 @@ export default function AboutPage() {
                 <div>
                   <h3 className="text-3xl font-bold text-[#6A47B1]">Research-Backed</h3>
                   <p className="mt-2 text-base leading-7 text-[#3A5B85]">
-                    PRO-KID is based on rigorous research and has been scientifically
-                    validated in children and teens aged 8-18 with chronic kidney disease.
+                    PRO-KID is based on rigorous research and has been clinically validated
+                    for children and youth ages 2-18 years with chronic kidney disease.
                   </p>
                 </div>
               </article>
@@ -226,18 +228,30 @@ export default function AboutPage() {
                   key={member.name}
                   className="rounded-[22px] border border-[#DFE8F7] bg-white p-5 shadow-[0_20px_65px_-42px_rgba(25,70,121,0.48)]"
                 >
-                  <div className="mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#DCE6F8]">
+                  <div className="mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#DCE6F8] bg-white">
                     <Image
                       src={member.image}
                       alt={member.name}
                       width={120}
                       height={120}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full scale-[1.15] bg-white object-cover"
+                      style={{ objectPosition: "center 20%" }}
                     />
                   </div>
                   <h3 className="mt-4 text-2xl font-semibold tracking-[-0.01em] text-[#6354B2]">{member.name}</h3>
                   <p className="mt-1 text-sm font-semibold text-[#1A3D72]">{member.role}</p>
-                  <p className="mt-3 whitespace-pre-line text-sm leading-6 text-[#58779C]">{member.org}</p>
+                  {member.profileUrl ? (
+                    <Link
+                      href={member.profileUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-3 inline-flex items-center text-sm font-medium text-[#3C4EA0] underline-offset-4 transition hover:underline"
+                    >
+                      Learn more about them
+                    </Link>
+                  ) : (
+                    <p className="mt-3 whitespace-pre-line text-sm leading-6 text-[#58779C]">{member.org}</p>
+                  )}
                 </article>
               ))}
             </div>

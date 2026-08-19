@@ -70,13 +70,13 @@
           "description": "Votre sélection détermine quel fichier JSON du questionnaire sera chargé plus tard."
         },
         "instructions": {
-          "title": "Avant de commencer",
-          "description": "Passez en revue ces consignes avant d'ouvrir le questionnaire.",
+          "title": "Instructions de complétion",
+          "description": "Complétez le questionnaire en suivant les consignes ci-dessous.",
           "items": {
-            "pastWeek": "Répondez en fonction des 7 derniers jours",
-            "noWrongAnswers": "Il n'y a pas de bonnes ou de mauvaises réponses",
-            "notSaved": "Vos réponses ne sont pas enregistrées",
-            "report": "Vous pourrez télécharger ou imprimer un rapport ensuite"
+            "pastWeek": "Parlez-nous seulement de ce que vous avez ressenti au cours des 7 derniers jours.",
+            "frequency": "Indiquez à quelle fréquence chaque sentiment s'est produit (fréquence).",
+            "impact": "Indiquez à quel point chaque sentiment vous a dérangé ou a dérangé votre enfant (impact).",
+            "report": "Vous pourrez ensuite télécharger ou imprimer un rapport."
           }
         }
       },

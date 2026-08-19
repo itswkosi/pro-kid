@@ -19,8 +19,8 @@ const frToolOverride = {
         description: frMessages.tool.onboarding.steps.instructions.description,
         items: {
           pastWeek: frMessages.tool.onboarding.steps.instructions.items.pastWeek,
-          noWrongAnswers: frMessages.tool.onboarding.steps.instructions.items.noWrongAnswers,
-          notSaved: frMessages.tool.onboarding.steps.instructions.items.notSaved,
+          frequency: frMessages.tool.onboarding.steps.instructions.items.frequency,
+          impact: frMessages.tool.onboarding.steps.instructions.items.impact,
           report: frMessages.tool.onboarding.steps.instructions.items.report,
         },
       },
@@ -29,6 +29,11 @@ const frToolOverride = {
   questionnaire: {
     title: frMessages.tool.questionnaire.title,
     subtitle: frMessages.tool.questionnaire.subtitle,
+    validation: {
+      ...enMessages.tool.questionnaire.validation,
+      complete: frMessages.tool.questionnaire.validation.complete,
+      incomplete: frMessages.tool.questionnaire.validation.incomplete,
+    },
   },
 };
 

@@ -32,6 +32,27 @@ const defaultIconByType: Record<string, PublicationIconKey> = {
   "Conference Abstract": "presentation",
 };
 
+function normalizeExternalUrl(url?: string): string {
+  if (!url) {
+    return "#";
+  }
+
+  const trimmed = url.trim();
+  if (trimmed.length === 0) {
+    return "#";
+  }
+
+  if (/^https?:\/\//i.test(trimmed)) {
+    return trimmed;
+  }
+
+  if (/^www\./i.test(trimmed)) {
+    return `https://${trimmed}`;
+  }
+
+  return "#";
+}
+
 function plainExcerpt(content: string): string {
   return content
     .replace(/^#+\s+/gm, "")
@@ -73,8 +94,8 @@ function coercePublication(
     citation:
       frontmatter.citation?.trim() ||
       `${authors.join(", ")} (${year}). ${title}. ${journal}.`,
-    pdfUrl: frontmatter.pdfUrl?.trim() || "#",
-    citationUrl: frontmatter.citationUrl?.trim() || "#",
+    pdfUrl: normalizeExternalUrl(frontmatter.pdfUrl),
+    citationUrl: normalizeExternalUrl(frontmatter.citationUrl),
     icon: frontmatter.icon || defaultIconByType[type] || "file-text",
     accent: frontmatter.accent || frontmatter.iconTone || "lavender",
   };
