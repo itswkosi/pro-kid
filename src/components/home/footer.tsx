@@ -7,6 +7,12 @@ const defaultLegalLinks = [
   { label: "Accessibility", href: "#" },
 ];
 
+const defaultSocialLinks = [
+  { label: "Facebook", href: "#", mark: "f" },
+  { label: "Twitter", href: "#", mark: "x" },
+  { label: "Instagram", href: "#", mark: "ig" },
+];
+
 export type FooterContent = {
   title: string;
   description: string;
@@ -18,6 +24,7 @@ export type FooterContent = {
   networkName: string;
   networkSubName: string;
   legalLinks: Array<{ label: string; href: string }>;
+  socialLinks: Array<{ label: string; href: string; mark: string }>;
   taglineLine1: string;
   taglineLine2: string;
   copyright: string;
@@ -39,6 +46,7 @@ const defaultFooterContent: FooterContent = {
   networkName: "Can-SOLVE",
   networkSubName: "CKD Network",
   legalLinks: defaultLegalLinks,
+  socialLinks: defaultSocialLinks,
   taglineLine1: "Patient Reported Outcomes",
   taglineLine2: "in Kidney Disease",
   copyright: "© 2026 University of Manitoba. All rights reserved.",
@@ -118,6 +126,25 @@ export function Footer({ content = defaultFooterContent }: FooterProps) {
               />
             </div>
           </div>
+
+          <ul className="flex items-center gap-3 lg:justify-end">
+            {content.socialLinks.map((link) => (
+              <li key={link.label}>
+                <Link
+                  href={link.href}
+                  aria-label={link.label}
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#CADAF0] text-[#4F6E95] transition-colors hover:text-[#214374]"
+                >
+                  <span
+                    aria-hidden="true"
+                    className={link.mark.length > 1 ? "text-[10px] font-semibold uppercase" : "text-xs font-semibold"}
+                  >
+                    {link.mark}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
 
         </div>
       </div>
