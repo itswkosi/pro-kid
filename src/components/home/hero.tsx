@@ -92,9 +92,9 @@ export function Hero() {
               Your voice. Your care.
             </h1>
             <p className="mt-5 max-w-md text-base leading-7 text-[#4B4580] sm:text-lg">
-              PRO-KID is a patient-reported outcome tool that helps children and
-              youth with kidney disease share how they feel—so their healthcare
-              team can provide the best possible care.
+              PRO-KID is a patient-reported outcome measure that helps children
+              and youth with kidney disease share how they feel, so their
+              healthcare team can provide the best possible care.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
