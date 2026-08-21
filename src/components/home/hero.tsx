@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#EAE7F5]">
+    <section className="relative isolate overflow-hidden bg-[#EAE7F5] lg:min-h-[760px]">
       {/* Hero image — right half */}
       <div className="absolute inset-y-0 right-0 hidden w-[52%] lg:block" aria-hidden="true">
         <div
@@ -84,9 +84,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-lg py-16 lg:py-24"
+            className="max-w-xl py-16 sm:py-20 lg:py-32"
           >
-            <h1 className="text-balance text-4xl font-bold leading-[1.15] text-[#2D2066] sm:text-5xl lg:text-[3.25rem]">
+            <h1 className="text-balance text-5xl font-bold leading-[1.08] text-[#2D2066] sm:text-6xl lg:text-[4.4rem]">
               Your symptoms.{" "}
               <br />
               Your voice. Your care.

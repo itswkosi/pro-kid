@@ -12,34 +12,61 @@ import { Navbar } from "@/components/home/navbar";
 
 const team = [
   {
-    name: "Dr Allison Dart",
+    name: "Dr. Allison Dart",
     role: "Principal Investigator",
     org: "Professor of Pediatrics\nUniversity of Manitoba",
     image: "/images/Allison-Headshot.png",
     profileUrl: "https://www.chrim.ca/investigator/allison-dart/",
   },
   {
-    name: "Dr Mina Matsuda-Abedini",
+    name: "Dr. Mina Matsuda-Abedini",
     role: "Co-Investigator",
     org: "Professor of Pediatrics\nUniversity of Manitoba",
     image: "/images/Mina-Headshot.jpeg",
     profileUrl: "https://www.bcchr.ca/research/find-a-researcher/mina-matsuda-abedini/",
   },
   {
-    name: "Karma Abukasm",
+    name: "Dr. Karma Abukasm",
     role: "Co-Investigator",
     org: "Assistant Professor of Pediatrics\nUniversity of Manitoba",
     image: "/images/Karma-Headshot.JPG",
   },
   {
-    name: "Dr Banke Oketola",
+    name: "Banke Oketola, PhD",
     role: "Research Manager",
-    org: "Associate Professor of Pediatrics\nUniversity of Manitoba",
+    org: "",
     image: "/images/Banke-Headshot.png",
+    profileUrl: "https://www.linkedin.com/in/banke-oketola-00827a11/",
   },
 ];
 
-const collaborators = [
+const topTierCollaborators = [
+  {
+    name: "CIHR-IRSC",
+    logo: "/images/CIHR IRSC-logo.png",
+  },
+  {
+    name: "Can-SOLVE CKD Network",
+    logo: "/images/can-solve-logo.png",
+  },
+];
+
+const middleTierCollaborators = [
+  {
+    name: "SickKids",
+    logo: "/images/sickkids.svg.png",
+  },
+  {
+    name: "Research Manitoba",
+    logo: "/images/Research_Manitoba_Logo.png",
+  },
+  {
+    name: "Children's Hospital Research Institute of Manitoba",
+    logo: "/images/chrim logo.png",
+  },
+];
+
+const bottomTierCollaborators = [
   {
     name: "University of Manitoba",
     logo: "/images/um-logo.png",
@@ -49,26 +76,45 @@ const collaborators = [
     logo: "/images/ubc-logo.png",
   },
   {
-    name: "SickKids",
-    logo: "/images/sickkids.svg.png",
-  },
-  {
-    name: "Can-SOLVE CKD Network",
-    logo: "/images/can-solve-logo.png",
-  },
-  {
-    name: "Children's Hospital Research Institute of Manitoba",
-    logo: "/images/chrim logo.png",
-  },
-  {
-    name: "CIHR-IRSC",
-    logo: "/images/CIHR IRSC-logo.png",
-  },
-  {
     name: "Kidney Foundation of Canada",
     logo: "/images/Kidney-Foundation-logo.png.tiff",
   },
+  {
+    name: "SPOR",
+    logo: "/images/SPOR logo.png",
+  },
 ];
+
+type CollaboratorCardProps = {
+  name: string;
+  logo: string;
+  size?: "default" | "large";
+};
+
+function CollaboratorCard({ name, logo, size = "default" }: CollaboratorCardProps) {
+  const isLarge = size === "large";
+
+  return (
+    <div
+      className={`flex w-full flex-col items-center justify-center rounded-2xl border border-[#E4ECF8] bg-[#F9FBFF] px-6 text-sm font-semibold leading-6 text-[#335981] ${
+        isLarge
+          ? "min-h-[190px] max-w-[340px] py-7 shadow-[0_16px_44px_-30px_rgba(18,62,112,0.45)]"
+          : "min-h-[170px] max-w-[300px] py-6"
+      }`}
+    >
+      <Image
+        src={logo}
+        alt={`${name} logo`}
+        width={isLarge ? 250 : 220}
+        height={isLarge ? 105 : 90}
+        className={`w-auto object-contain ${isLarge ? "h-20 max-w-[250px]" : "h-16 max-w-[220px]"}`}
+      />
+      <p className={`mt-4 font-semibold leading-6 text-[#335981] ${isLarge ? "text-base" : "text-sm"}`}>
+        {name}
+      </p>
+    </div>
+  );
+}
 
 export default function AboutPage() {
   return (
@@ -154,7 +200,7 @@ export default function AboutPage() {
           <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_1.05fr] lg:items-center lg:px-8">
             <article>
               <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#163C72] sm:text-5xl">
-                Developed With and For Patients
+                Developed With and For Children
               </h2>
               <span className="mt-4 block h-1.5 w-20 rounded-full bg-[#EDC43F]" aria-hidden="true" />
               <p className="mt-6 text-lg leading-8 text-[#35557E]">
@@ -250,7 +296,9 @@ export default function AboutPage() {
                       Learn more about them
                     </Link>
                   ) : (
-                    <p className="mt-3 whitespace-pre-line text-sm leading-6 text-[#58779C]">{member.org}</p>
+                    member.org ? (
+                      <p className="mt-3 whitespace-pre-line text-sm leading-6 text-[#58779C]">{member.org}</p>
+                    ) : null
                   )}
                 </article>
               ))}
@@ -271,26 +319,39 @@ export default function AboutPage() {
         <section className="border-y border-[#E2EAF7] bg-white py-12 sm:py-16" aria-labelledby="collaborators-title">
           <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
             <h2 id="collaborators-title" className="text-center text-4xl font-bold text-[#163C72] sm:text-5xl">
-              Our Collaborators
+              This research work has been supported by the generous contributions of:
             </h2>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4 text-center">
-              {collaborators.map((collaborator) => (
-                <div
-                  key={collaborator.name}
-                  className="flex min-h-[170px] w-full max-w-[300px] flex-col items-center justify-center rounded-2xl border border-[#E4ECF8] bg-[#F9FBFF] px-6 py-6 text-sm font-semibold leading-6 text-[#335981]"
-                >
-                  <Image
-                    src={collaborator.logo}
-                    alt={`${collaborator.name} logo`}
-                    width={220}
-                    height={90}
-                    className="h-16 w-auto max-w-[220px] object-contain"
+            <div className="mt-10 space-y-4 text-center">
+              <div className="mx-auto grid max-w-[720px] gap-4 sm:grid-cols-2">
+                {topTierCollaborators.map((collaborator) => (
+                  <CollaboratorCard
+                    key={collaborator.name}
+                    name={collaborator.name}
+                    logo={collaborator.logo}
+                    size="large"
                   />
-                  <p className="mt-4 text-sm font-semibold leading-6 text-[#335981]">
-                    {collaborator.name}
-                  </p>
-                </div>
-              ))}
+                ))}
+              </div>
+
+              <div className="mx-auto grid max-w-[980px] gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {middleTierCollaborators.map((collaborator) => (
+                  <CollaboratorCard
+                    key={collaborator.name}
+                    name={collaborator.name}
+                    logo={collaborator.logo}
+                  />
+                ))}
+              </div>
+
+              <div className="mx-auto grid max-w-[1280px] gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                {bottomTierCollaborators.map((collaborator) => (
+                  <CollaboratorCard
+                    key={collaborator.name}
+                    name={collaborator.name}
+                    logo={collaborator.logo}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </section>

@@ -15,15 +15,21 @@ type RawFrontmatter = {
   type?: string;
   topics?: string[];
   topic?: string;
+  description?: string;
   icon?: PublicationIconKey;
   iconTone?: PublicationAccent;
   accent?: PublicationAccent;
   pdfUrl?: string;
+  abstractUrl?: string | null;
   citation?: string;
   citationUrl?: string;
 };
 
 const CONTENT_DIR = path.join(process.cwd(), "src/content/publications");
+const EXCLUDED_PUBLICATION_SLUGS = new Set([
+  "kt-canada-si-program-2025",
+  "patient-caregiver-perspective-cjasn-2024",
+]);
 
 const defaultIconByType: Record<string, PublicationIconKey> = {
   "Research Article": "file-text",
@@ -81,6 +87,7 @@ function coercePublication(
         : ["General"];
 
   const abstractRaw = plainExcerpt(content);
+  const descriptionRaw = frontmatter.description?.trim() || abstractRaw;
 
   return {
     slug,
@@ -90,7 +97,9 @@ function coercePublication(
     year,
     type,
     topics,
+    description: descriptionRaw,
     abstract: abstractRaw,
+    abstractUrl: frontmatter.abstractUrl ? normalizeExternalUrl(frontmatter.abstractUrl) : null,
     citation:
       frontmatter.citation?.trim() ||
       `${authors.join(", ")} (${year}). ${title}. ${journal}.`,
@@ -116,7 +125,8 @@ export async function getPublications(): Promise<PublicationItem[]> {
       }),
   );
 
-  const sorted = items.sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
+  const visibleItems = items.filter((item) => !EXCLUDED_PUBLICATION_SLUGS.has(item.slug));
+  const sorted = visibleItems.sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
   const seen = new Set<string>();
 
   return sorted.filter((item) => {
@@ -144,6 +154,10 @@ export async function getPublicationFilterOptions() {
 }
 
 export async function getPublicationBySlug(slug: string): Promise<PublicationItem | null> {
+  if (EXCLUDED_PUBLICATION_SLUGS.has(slug)) {
+    return null;
+  }
+
   const items = await getPublications();
   return items.find((item) => item.slug === slug) || null;
 }

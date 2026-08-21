@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `${publication.title} | PRO-KID Publications`,
-    description: publication.abstract,
+    description: publication.description,
   };
 }
 
@@ -35,7 +35,6 @@ export default async function PublicationDetailPage({ params }: PageProps) {
   }
 
   const hasPdf = publication.pdfUrl !== "#";
-  const hasCitation = publication.citationUrl !== "#";
 
   return (
     <div className="min-h-screen bg-[#FBFCFF] text-[#173B68]">
@@ -85,18 +84,6 @@ export default async function PublicationDetailPage({ params }: PageProps) {
               }`}
             >
               Full publication
-            </a>
-            <a
-              href={publication.citationUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-disabled={!hasCitation}
-              tabIndex={hasCitation ? 0 : -1}
-              className={`inline-flex h-11 items-center justify-center rounded-2xl border border-[#CEDCF1] bg-white px-5 text-sm font-semibold text-[#3C5D89] ${
-                hasCitation ? "hover:bg-[#F4F8FF]" : "cursor-not-allowed opacity-50 pointer-events-none"
-              }`}
-            >
-              Citation source
             </a>
           </section>
         </article>

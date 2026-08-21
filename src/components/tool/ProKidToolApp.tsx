@@ -89,7 +89,7 @@ function LocalizedToolShell({
   const footerContent: FooterContent = {
     title: t("common.footer.title"),
     description: t("common.footer.description"),
-    learnMoreLabel: t("common.footer.learnMore"),
+    learnMoreLabel: "",
     learnMoreHref: "/about",
     partnerLabel: t("common.footer.partner"),
     partnerName: t("common.footer.partnerName"),

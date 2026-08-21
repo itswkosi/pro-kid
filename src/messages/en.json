@@ -48,26 +48,24 @@
       "french": "Français"
     },
     "onboarding": {
-      "eyebrow": "Onboarding",
+      "eyebrow": "Getting started",
       "stepLabel": "Step {step} of 3",
       "continue": "Continue",
       "back": "Back",
       "begin": "Begin Questionnaire",
       "changeSelections": "Change selections",
-      "selectedFile": "Selected questionnaire file",
       "summary": {
         "language": "Language",
-        "ageGroup": "Age group",
-        "file": "Questionnaire file"
+        "ageGroup": "Age group"
       },
       "steps": {
         "language": {
           "title": "Choose your language",
-          "description": "Switching language updates the full PRO-KID tool instantly without reloading the page."
+          "description": ""
         },
         "age": {
           "title": "Choose the age group",
-          "description": "Your selection determines which questionnaire JSON file will load later."
+          "description": ""
         },
         "instructions": {
           "title": "Completion instructions",
@@ -82,7 +80,6 @@
       },
       "ageGroups": {
         "completedBy": "Completed by",
-        "loads": "Loads",
         "age2To4": {
           "age": "2-4 years",
           "respondent": "Parent or caregiver",
@@ -96,7 +93,7 @@
         "age8To18": {
           "age": "8-18 years",
           "respondent": "Child or youth",
-          "description": "A self-report version for older children and adolescents to describe symptoms directly."
+          "description": "A self-report version for older children and youth to describe symptoms directly."
         }
       }
     },

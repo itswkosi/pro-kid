@@ -27,7 +27,7 @@ export function PublicationsPageClient({ publications, options }: PublicationsPa
   const [type, setType] = useState("All Types");
   const [topic, setTopic] = useState("All Topics");
   const [year, setYear] = useState("All Years");
-  const [sort, setSort] = useState("Most Recent");
+  const [sort, setSort] = useState("Oldest");
   const [page, setPage] = useState(1);
 
   const filtered = useMemo(() => {

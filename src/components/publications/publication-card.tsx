@@ -94,7 +94,7 @@ export function PublicationCard({ publication }: PublicationCardProps) {
       </div>
 
       <div>
-        <p className="text-sm leading-7 text-[#3F608A]">{publication.abstract}</p>
+        <p className="text-sm leading-7 text-[#3F608A]">{publication.description}</p>
         <Link
           href={`/publications/${publication.slug}`}
           className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[#6350C8] underline-offset-4 hover:underline"
@@ -104,7 +104,7 @@ export function PublicationCard({ publication }: PublicationCardProps) {
         </Link>
       </div>
 
-      <div className="flex shrink-0 gap-3 lg:flex-col">
+      <div className="flex shrink-0 lg:flex-col">
         <a
           href={publication.pdfUrl}
           target="_blank"
@@ -117,19 +117,6 @@ export function PublicationCard({ publication }: PublicationCardProps) {
           }`}
         >
           Full publication
-        </a>
-        <a
-          href={publication.citationUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`Open citation source for ${publication.title}`}
-          aria-disabled={!hasCitation}
-          tabIndex={hasCitation ? 0 : -1}
-          className={`inline-flex h-11 items-center justify-center rounded-2xl border border-[#CEDCF1] bg-white px-4 text-sm font-semibold text-[#3C5D89] ${
-            hasCitation ? "hover:bg-[#F4F8FF]" : "cursor-not-allowed opacity-50 pointer-events-none"
-          }`}
-        >
-          Citation source
         </a>
       </div>
     </article>

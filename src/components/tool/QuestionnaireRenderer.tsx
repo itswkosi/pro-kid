@@ -71,7 +71,6 @@ export function QuestionnaireRenderer({
   const [showReviewValidation, setShowReviewValidation] = useState(false);
 
   const selectedAgeGroup = ageGroups.find((group) => group.value === selectedAge) ?? ageGroups[2];
-  const selectedQuestionnaireFile = getQuestionnaireFile(selectedAge, selectedLanguage);
   const questionnaire = getQuestionnaireDefinition(selectedAge, selectedLanguage);
   const symptomSummary = buildSymptomBurdenSummary(questionnaire, responses);
   const currentLanguageLabel = t(
@@ -378,31 +377,16 @@ export function QuestionnaireRenderer({
                   </motion.div>
                 </AnimatePresence>
 
-                <div className="space-y-4">
-                  <InstructionsCard
-                    icon={Info}
-                    title={t("sidebar.about.title")}
-                    description={t("sidebar.about.description")}
-                    footerLinkLabel={t("sidebar.about.link")}
-                    accent="blue"
-                  />
-                  <div className="rounded-[26px] border border-[#E7ECF7] bg-white p-5 shadow-[0_18px_45px_-34px_rgba(49,67,126,0.22)]">
-                    <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#7A8FB2]">
-                      {t("onboarding.selectedFile")}
+                <div className="rounded-[26px] border border-[#E7ECF7] bg-white p-5 shadow-[0_18px_45px_-34px_rgba(49,67,126,0.22)]">
+                  <div className="space-y-2 text-sm text-[#56708F]">
+                    <p>
+                      <span className="font-semibold text-[#234872]">{t("onboarding.summary.language")}:</span>{" "}
+                      {currentLanguageLabel}
                     </p>
-                    <p className="mt-3 rounded-2xl bg-[#F7F8FD] px-4 py-3 font-mono text-sm text-[#5C6E93]">
-                      {selectedQuestionnaireFile}
+                    <p>
+                      <span className="font-semibold text-[#234872]">{t("onboarding.summary.ageGroup")}:</span>{" "}
+                      {t(`onboarding.ageGroups.${selectedAgeGroup.translationKey}.age`)}
                     </p>
-                    <div className="mt-4 space-y-2 text-sm text-[#56708F]">
-                      <p>
-                        <span className="font-semibold text-[#234872]">{t("onboarding.summary.language")}:</span>{" "}
-                        {currentLanguageLabel}
-                      </p>
-                      <p>
-                        <span className="font-semibold text-[#234872]">{t("onboarding.summary.ageGroup")}:</span>{" "}
-                        {t(`onboarding.ageGroups.${selectedAgeGroup.translationKey}.age`)}
-                      </p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -468,12 +452,6 @@ export function QuestionnaireRenderer({
                         {t(`onboarding.ageGroups.${selectedAgeGroup.translationKey}.age`)}
                       </p>
                     </div>
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#7C91B2]">
-                        {t("onboarding.summary.file")}
-                      </p>
-                      <p className="mt-2 text-sm font-semibold text-[#234873]">{selectedQuestionnaireFile}</p>
-                    </div>
                   </div>
 
                   <Button
@@ -520,26 +498,6 @@ export function QuestionnaireRenderer({
                   className="h-full rounded-full bg-[linear-gradient(90deg,#8C74E4_0%,#A6D46E_100%)] transition-[width] duration-300"
                   style={{ width: `${(completedCount / questionnaire.questions.length) * 100}%` }}
                 />
-              </div>
-            </div>
-
-            <div className="mt-8 hidden rounded-[24px] border border-[#EFF2FA] bg-[#FCFDFF] px-4 py-4 md:block">
-              <div className="grid grid-cols-[minmax(180px,1.2fr)_minmax(0,1fr)_minmax(0,1fr)] gap-4">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#7A90B0]">
-                    {t("questionnaire.symptomsLabel")}
-                  </p>
-                </div>
-                <div>
-                  <p className="text-center text-xs font-bold uppercase tracking-[0.18em] text-[#7A64C6]">
-                    {t("questionnaire.frequencyTitle")}
-                  </p>
-                </div>
-                <div>
-                  <p className="text-center text-xs font-bold uppercase tracking-[0.18em] text-[#7BA05F]">
-                    {t("questionnaire.impactTitle")}
-                  </p>
-                </div>
               </div>
             </div>
 

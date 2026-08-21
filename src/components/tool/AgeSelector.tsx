@@ -77,12 +77,6 @@ export function AgeSelector({ selectedAge, onAgeChange }: AgeSelectorProps) {
                 </p>
               </div>
 
-              <div className="mt-auto rounded-2xl bg-[#FAFBFF] px-3 py-3 text-xs leading-5 text-[#7085A2]">
-                <span className="font-semibold text-[#5A74B8]">
-                  {t("onboarding.ageGroups.loads")}: 
-                </span>
-                {option.questionnaireFile}
-              </div>
             </button>
           );
         })}

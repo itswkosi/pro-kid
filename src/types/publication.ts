@@ -32,7 +32,9 @@ export type PublicationItem = {
   year: number;
   type: string;
   topics: string[];
+  description: string;
   abstract: string;
+  abstractUrl: string | null;
   citation: string;
   pdfUrl: string;
   citationUrl: string;

@@ -41,33 +41,31 @@
   "tool": {
     "hero": {
       "title": "Outil PRO-KID",
-      "description": "Aidez les enfants et les adolescents à exprimer comment ils se sentent afin que leur équipe soignante comprenne mieux ce qui compte le plus."
+      "description": "Aidez les enfants et les jeunes à exprimer comment ils se sentent afin que leur équipe soignante comprenne mieux ce qui compte le plus."
     },
     "language": {
       "english": "English",
       "french": "Français"
     },
     "onboarding": {
-      "eyebrow": "Accueil",
+      "eyebrow": "Pour commencer",
       "stepLabel": "Étape {step} sur 3",
       "continue": "Continuer",
       "back": "Retour",
       "begin": "Commencer le questionnaire",
       "changeSelections": "Modifier les sélections",
-      "selectedFile": "Fichier de questionnaire sélectionné",
       "summary": {
         "language": "Langue",
-        "ageGroup": "Groupe d'âge",
-        "file": "Fichier du questionnaire"
+        "ageGroup": "Groupe d'âge"
       },
       "steps": {
         "language": {
           "title": "Choisissez votre langue",
-          "description": "Changer la langue met à jour tout l'outil PRO-KID instantanément sans recharger la page."
+          "description": ""
         },
         "age": {
           "title": "Choisissez le groupe d'âge",
-          "description": "Votre sélection détermine quel fichier JSON du questionnaire sera chargé plus tard."
+          "description": ""
         },
         "instructions": {
           "title": "Instructions de complétion",
@@ -82,7 +80,6 @@
       },
       "ageGroups": {
         "completedBy": "Rempli par",
-        "loads": "Charge",
         "age2To4": {
           "age": "2-4 ans",
           "respondent": "Parent ou proche aidant",
@@ -95,8 +92,8 @@
         },
         "age8To18": {
           "age": "8-18 ans",
-          "respondent": "Enfant ou adolescent",
-          "description": "Une version autodéclarée pour permettre aux enfants plus âgés et aux adolescents de décrire directement leurs symptômes."
+          "respondent": "Enfant ou jeune",
+          "description": "Une version autodéclarée pour permettre aux enfants plus âgés et aux jeunes de décrire directement leurs symptômes."
         }
       }
     },

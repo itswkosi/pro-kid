@@ -97,17 +97,19 @@ export function Footer({ content = defaultFooterContent }: FooterProps) {
 
           <div className="min-w-0">
             <p className="text-sm leading-6 text-[#2E4F7A]">{content.description}</p>
-            <Link
-              href={content.learnMoreHref}
-              className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#1E4E8C] transition-colors hover:text-[#163A6D]"
-            >
-              {content.learnMoreLabel}
-              <span aria-hidden="true">→</span>
-            </Link>
+            {content.learnMoreLabel ? (
+              <Link
+                href={content.learnMoreHref}
+                className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#1E4E8C] transition-colors hover:text-[#163A6D]"
+              >
+                {content.learnMoreLabel}
+                <span aria-hidden="true">→</span>
+              </Link>
+            ) : null}
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2">
-            <div className="flex items-center justify-center rounded-2xl border border-[#E0E8F7] bg-[#FBFDFF] px-4 py-3">
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-[#E0E8F7] bg-[#FBFDFF] px-4 py-3 text-center">
               <Image
                 src="/images/um-logo.png"
                 alt="University of Manitoba logo"
@@ -115,8 +117,11 @@ export function Footer({ content = defaultFooterContent }: FooterProps) {
                 height={80}
                 className="h-10 w-auto max-w-[170px]"
               />
+              <span className="mt-2 text-xs font-semibold tracking-wide text-[#2E4F7A]">
+                University of Manitoba
+              </span>
             </div>
-            <div className="flex items-center justify-center rounded-2xl border border-[#E0E8F7] bg-[#FBFDFF] px-4 py-3">
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-[#E0E8F7] bg-[#FBFDFF] px-4 py-3 text-center">
               <Image
                 src="/images/can-solve-logo.png"
                 alt="Can-SOLVE CKD Network logo"
@@ -124,6 +129,9 @@ export function Footer({ content = defaultFooterContent }: FooterProps) {
                 height={80}
                 className="h-10 w-auto max-w-[170px]"
               />
+              <span className="mt-2 text-xs font-semibold tracking-wide text-[#2E4F7A]">
+                CanSolve CKD
+              </span>
             </div>
           </div>
 
