@@ -3,9 +3,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/home/footer";
 import { Navbar } from "@/components/home/navbar";
 import { BrowseByAudience } from "@/components/resources/browse-by-audience";
-import { FeaturedResources } from "@/components/resources/featured-resources";
 import { ResourcesBottomCta } from "@/components/resources/resources-bottom-cta";
-import { ResourceSearchInterface } from "@/components/resources/resource-search-interface";
 import { ResourcesHero } from "@/components/resources/resources-hero";
 
 export const metadata: Metadata = {
@@ -27,8 +25,6 @@ export default function ResourcesPage() {
 
       <main id="main-content">
         <ResourcesHero />
-        <ResourceSearchInterface />
-        <FeaturedResources />
         <BrowseByAudience />
         <ResourcesBottomCta />
       </main>

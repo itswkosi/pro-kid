@@ -5,19 +5,9 @@ import {
   ArrowRight,
   Baby,
   BookOpenCheck,
-  CalendarDays,
   CircleHelp,
-  ClipboardList,
-  Files,
-  Download,
-  FileBadge2,
   FileText,
-  LayoutTemplate,
-  MessageSquareHeart,
   NotebookText,
-  Presentation,
-  Quote,
-  Scale,
   Stethoscope,
   Users,
 } from "lucide-react";
@@ -56,7 +46,7 @@ const audiences: AudienceItem[] = [
   {
     title: "Parents & Caregivers",
     description:
-      "Practical guidance to help you prepare for visits and support daily symptom conversations.",
+      "Reliable kidney-health information and practical support for day-to-day family care.",
     targetId: "parents-caregivers-section",
     icon: Users,
     accent: {
@@ -70,7 +60,7 @@ const audiences: AudienceItem[] = [
   {
     title: "Healthcare Providers",
     description:
-      "Clinical tools and implementation materials for integrating PRO-KID in practice.",
+      "National pediatric nephrology and CKD network resources for clinical teams.",
     targetId: "healthcare-providers-section",
     icon: Stethoscope,
     accent: {
@@ -105,22 +95,11 @@ type ChildrenResource = {
       };
 };
 
-type ParentResource = {
+type ExternalWebsiteResource = {
   title: string;
   description: string;
-  format: "PDF" | "Article";
+  organization: string;
   href: string;
-  icon: typeof FileText;
-};
-
-type ClinicianResource = {
-  title: string;
-  description: string;
-  publicationDate: string;
-  pages: string;
-  authors: string;
-  href: string;
-  citationHref: string;
   icon: typeof FileText;
 };
 
@@ -160,21 +139,6 @@ const childrenResources: ChildrenResource[] = [
     },
   },
   {
-    title: "My Health Workbook",
-    description:
-      "A guided workbook to track questions, symptoms, and what matters most before clinic.",
-    type: "Activity",
-    readTime: "8 min read",
-    href: "/resources?resource=my-health-workbook",
-    visual: {
-      kind: "image",
-      src: "/images/my-health-workbook.png",
-      alt: "Friendly document illustration with a check mark.",
-      className: "bg-white",
-      imageClassName: "object-contain p-6",
-    },
-  },
-  {
     title: "Getting Ready for Clinic",
     description:
       "What to bring, what to expect, and a few easy ways to feel more prepared for your visit.",
@@ -193,115 +157,49 @@ const childrenResources: ChildrenResource[] = [
   },
 ];
 
-const parentResources: ParentResource[] = [
+const parentResources: ExternalWebsiteResource[] = [
   {
-    title: "Understanding PRO-KID",
+    title: "My Kidneys My Health",
     description:
-      "A clear overview of what PRO-KID measures and how it supports conversations about your child's health.",
-    format: "PDF",
-    href: "/resources?resource=understanding-pro-kid",
+      "Trusted plain-language education, wellness tools, and practical CKD support for families.",
+    organization: "National Kidney Foundation",
+    href: "https://mykidneysmyhealth.com/",
     icon: NotebookText,
   },
   {
-    title: "Preparing for Clinic Visits",
+    title: "The Kidney Foundation of Canada",
     description:
-      "A practical checklist to help organize questions, medications, and updates before each appointment.",
-    format: "PDF",
-    href: "/resources?resource=preparing-for-clinic-visits",
-    icon: ClipboardList,
-  },
-  {
-    title: "Helping Your Child Describe Symptoms",
-    description:
-      "Guidance for asking open questions and helping your child explain pain, fatigue, and everyday changes.",
-    format: "Article",
-    href: "/resources?resource=helping-your-child-describe-symptoms",
-    icon: MessageSquareHeart,
-  },
-  {
-    title: "Symptom Tracking Tips",
-    description:
-      "Suggestions for noticing patterns, writing useful notes, and sharing symptom changes with the care team.",
-    format: "PDF",
-    href: "/resources?resource=symptom-tracking-tips",
-    icon: FileText,
-  },
-  {
-    title: "Frequently Asked Questions",
-    description:
-      "Answers to common questions about clinic visits, PRO-KID use, privacy, and what to expect over time.",
-    format: "Article",
-    href: "/resources?resource=frequently-asked-questions",
+      "Programs, patient resources, and advocacy information for people and families affected by kidney disease.",
+    organization: "Kidney Foundation",
+    href: "https://kidney.ca/en/",
     icon: CircleHelp,
+  },
+  {
+    title: "BC Renal",
+    description:
+      "Clinical pathways, kidney care guidance, and provincial resources from British Columbia.",
+    organization: "BC Renal",
+    href: "https://www.bcrenal.ca/",
+    icon: FileText,
   },
 ];
 
-const clinicianResources: ClinicianResource[] = [
+const clinicianResources: ExternalWebsiteResource[] = [
   {
-    title: "Implementation Guides",
+    title: "Can-SOLVE CKD Network",
     description:
-      "Step-by-step guidance for introducing PRO-KID into pediatric nephrology workflows and visit routines.",
-    publicationDate: "Jul 2026",
-    pages: "18 pages",
-    authors: "PRO-KID Working Group",
-    href: "/resources?resource=implementation-guides",
-    citationHref: "/resources?resource=implementation-guides&view=citation",
+      "Pan-Canadian research, patient engagement, and innovation initiatives to improve kidney health.",
+    organization: "Can-SOLVE CKD",
     icon: BookOpenCheck,
+    href: "https://cansolveckd.ca/",
   },
   {
-    title: "Validation Papers",
+    title: "Canadian Association of Pediatric Nephrologists",
     description:
-      "Core validation evidence summarizing development methods, psychometrics, and pediatric use cases.",
-    publicationDate: "Jun 2026",
-    pages: "12 pages",
-    authors: "Chanchlani et al.",
-    href: "/resources?resource=validation-papers",
-    citationHref: "/resources?resource=validation-papers&view=citation",
-    icon: FileBadge2,
-  },
-  {
-    title: "Clinical Workflow",
-    description:
-      "Workflow maps for screening, follow-up, documentation, and team coordination during clinic visits.",
-    publicationDate: "May 2026",
-    pages: "10 pages",
-    authors: "Clinical Implementation Team",
-    href: "/resources?resource=clinical-workflow",
-    citationHref: "/resources?resource=clinical-workflow&view=citation",
-    icon: LayoutTemplate,
-  },
-  {
-    title: "Scoring Manual",
-    description:
-      "Reference instructions for scoring, interpreting domains, and using results consistently in practice.",
-    publicationDate: "Apr 2026",
-    pages: "22 pages",
-    authors: "Measurement Core",
-    href: "/resources?resource=scoring-manual",
-    citationHref: "/resources?resource=scoring-manual&view=citation",
-    icon: Scale,
-  },
-  {
-    title: "Presentation Slides",
-    description:
-      "Ready-to-use decks for orientation, knowledge sharing, and internal training across care teams.",
-    publicationDate: "Mar 2026",
-    pages: "26 slides",
-    authors: "PRO-KID Knowledge Translation",
-    href: "/resources?resource=presentation-slides",
-    citationHref: "/resources?resource=presentation-slides&view=citation",
-    icon: Presentation,
-  },
-  {
-    title: "Training Materials",
-    description:
-      "Quick-start resources, facilitator notes, and reference materials for onboarding clinicians to PRO-KID.",
-    publicationDate: "Feb 2026",
-    pages: "14 pages",
-    authors: "Education and Practice Leads",
-    href: "/resources?resource=training-materials",
-    citationHref: "/resources?resource=training-materials&view=citation",
-    icon: Files,
+      "Professional organization site for pediatric nephrology practice, collaboration, and updates across Canada.",
+    organization: "CAPN",
+    href: "https://www.capneph.ca/",
+    icon: Stethoscope,
   },
 ];
 
@@ -389,7 +287,7 @@ export function BrowseByAudience() {
             </div>
           </div>
 
-          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-6 grid gap-5 md:grid-cols-3">
             {childrenResources.map((resource, index) => (
               <motion.article
                 key={resource.title}
@@ -470,13 +368,13 @@ export function BrowseByAudience() {
                   For Parents &amp; Caregivers
                 </h3>
                 <p className="mt-1 max-w-3xl text-sm leading-7 text-[#4A5F84] sm:text-base">
-                  Helpful tools and information to support conversations, preparation, and day-to-day symptom tracking.
+                  Trusted external websites to support family education and living well with kidney disease.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {parentResources.map((resource, index) => {
               const Icon = resource.icon;
 
@@ -496,23 +394,28 @@ export function BrowseByAudience() {
                     </span>
 
                     <span className="rounded-full border border-[#D6E8D7] bg-[#F7FBF8] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-[#4F7B5A]">
-                      {resource.format}
+                      Website
                     </span>
                   </div>
 
                   <h4 className="mt-5 text-[1.05rem] font-bold leading-7 tracking-[-0.015em] text-[#204B34]">
                     {resource.title}
                   </h4>
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-[0.08em] text-[#4F7B5A]">
+                    {resource.organization}
+                  </p>
                   <p className="mt-2 text-sm leading-6 text-[#5A6E68]">
                     {resource.description}
                   </p>
 
                   <Link
                     href={resource.href}
-                    className="button-ripple inline-flex h-11 items-center justify-center gap-2 rounded-full border border-[#C7DEC9] bg-white px-4 text-sm font-bold text-[#356F48] transition-all duration-200 hover:border-[#AED4B4] hover:bg-[#F4FBF5]"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="button-ripple mt-auto inline-flex h-11 items-center justify-center gap-2 rounded-full border border-[#C7DEC9] bg-white px-4 text-sm font-bold text-[#356F48] transition-all duration-200 hover:border-[#AED4B4] hover:bg-[#F4FBF5]"
                   >
-                    <Download className="h-4 w-4" aria-hidden="true" />
-                    {resource.format === "PDF" ? "Download PDF" : "Open Article"}
+                    Visit Website
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </Link>
                 </motion.article>
               );
@@ -535,13 +438,13 @@ export function BrowseByAudience() {
                   For Healthcare Providers
                 </h3>
                 <p className="mt-1 max-w-3xl text-sm leading-7 text-[#4A5F84] sm:text-base">
-                  Professional reference materials for implementation, scoring, evidence review, and team training.
+                  External professional organizations and CKD network resources for pediatric nephrology teams.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-2">
             {clinicianResources.map((resource, index) => {
               const Icon = resource.icon;
 
@@ -560,49 +463,29 @@ export function BrowseByAudience() {
                       <Icon className="h-5 w-5" aria-hidden="true" />
                     </span>
                     <span className="rounded-full border border-[#D7E4FA] bg-[#F6FAFF] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-[#4C6FA3]">
-                      PDF
+                      Website
                     </span>
                   </div>
 
                   <h4 className="mt-5 text-[1.08rem] font-bold leading-7 tracking-[-0.015em] text-[#1E457A]">
                     {resource.title}
                   </h4>
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-[0.08em] text-[#4C6FA3]">
+                    {resource.organization}
+                  </p>
                   <p className="mt-2 text-sm leading-6 text-[#5A7396]">
                     {resource.description}
                   </p>
 
-                  <dl className="mt-5 grid gap-2.5 text-sm text-[#5E7392]">
-                    <div className="flex items-center gap-2">
-                      <CalendarDays className="h-4 w-4 text-[#6F92C8]" aria-hidden="true" />
-                      <dt className="font-semibold text-[#375887]">Publication Date</dt>
-                      <dd>{resource.publicationDate}</dd>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <FileText className="h-4 w-4 text-[#6F92C8]" aria-hidden="true" />
-                      <dt className="font-semibold text-[#375887]">Pages</dt>
-                      <dd>{resource.pages}</dd>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <Users className="mt-0.5 h-4 w-4 text-[#6F92C8]" aria-hidden="true" />
-                      <dt className="font-semibold text-[#375887]">Authors</dt>
-                      <dd>{resource.authors}</dd>
-                    </div>
-                  </dl>
-
                   <div className="mt-auto flex flex-wrap gap-3 pt-5">
                     <Link
                       href={resource.href}
+                      target="_blank"
+                      rel="noreferrer"
                       className="button-ripple inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#2F68BF] px-4 text-sm font-bold text-white transition-colors duration-200 hover:bg-[#2758A3]"
                     >
-                      <Download className="h-4 w-4" aria-hidden="true" />
-                      Download
-                    </Link>
-                    <Link
-                      href={resource.citationHref}
-                      className="button-ripple resource-link-underline inline-flex h-11 items-center justify-center gap-2 rounded-full border border-[#D3E1F8] bg-white px-4 text-sm font-bold text-[#3B629A] transition-colors duration-200 hover:bg-[#F5F9FF]"
-                    >
-                      <Quote className="h-4 w-4" aria-hidden="true" />
-                      Citation
+                      Visit Website
+                      <ArrowRight className="h-4 w-4" aria-hidden="true" />
                     </Link>
                   </div>
                 </motion.article>

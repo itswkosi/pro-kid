@@ -64,7 +64,7 @@ export function Footer({ content = defaultFooterContent }: FooterProps) {
       </h2>
 
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-8 border-b border-[#DDE7F5] py-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1.4fr)_minmax(0,1.25fr)_auto] lg:items-center lg:gap-6">
+        <div className="grid gap-8 border-b border-[#DDE7F5] py-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1.4fr)_minmax(0,1.25fr)] lg:items-center lg:gap-6">
           <div className="min-w-0">
             <div className="flex items-start gap-2.5">
               <Image
@@ -108,7 +108,7 @@ export function Footer({ content = defaultFooterContent }: FooterProps) {
             ) : null}
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid gap-3 sm:grid-cols-3">
             <div className="flex flex-col items-center justify-center rounded-2xl border border-[#E0E8F7] bg-[#FBFDFF] px-4 py-3 text-center">
               <Image
                 src="/images/um-logo.png"
@@ -133,26 +133,19 @@ export function Footer({ content = defaultFooterContent }: FooterProps) {
                 CanSolve CKD
               </span>
             </div>
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-[#E0E8F7] bg-[#FBFDFF] px-4 py-3 text-center">
+              <Image
+                src="/images/ubc-logo.png"
+                alt="University of British Columbia logo"
+                width={220}
+                height={80}
+                className="h-10 w-auto max-w-[170px]"
+              />
+              <span className="mt-2 text-xs font-semibold tracking-wide text-[#2E4F7A]">
+                UBC
+              </span>
+            </div>
           </div>
-
-          <ul className="flex items-center gap-3 lg:justify-end">
-            {content.socialLinks.map((link) => (
-              <li key={link.label}>
-                <Link
-                  href={link.href}
-                  aria-label={link.label}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#CADAF0] text-[#4F6E95] transition-colors hover:text-[#214374]"
-                >
-                  <span
-                    aria-hidden="true"
-                    className={link.mark.length > 1 ? "text-[10px] font-semibold uppercase" : "text-xs font-semibold"}
-                  >
-                    {link.mark}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
 
         </div>
       </div>
